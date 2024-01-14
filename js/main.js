@@ -9,7 +9,7 @@ function createNavigation() {
     <img id="nav-logo" src="./images/Capture.PNG" alt="M&K Global Impact globe logo">
     <ul class="nav-list">
     <li class="nav-item">
-        <a href="./contact.html">Contact</a>
+        <a href="#">Contact</a>
     </li>
 </ul>`
 }
