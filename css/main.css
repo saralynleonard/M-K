@@ -1,8 +1,9 @@
 :root {
-    --main-bg-color: #002d40;
-    --secondary-color: #1aa6b7;
+    --main-bg-color: #fff;
+    --secondary-color: #E0E0E0;
     /* --main-color: #f1faee; */
-    --main-color: #d9ecf2;
+    /*--main-color: #002d40;*/
+    --main-color: #1F3A93;
 }
 * {
     box-sizing: border-box;
@@ -15,6 +16,7 @@ body {
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
+    background-color: var(--main-bg-color);
 }
 
 header {
@@ -73,6 +75,7 @@ nav a:hover {
 
 main {
     padding-top: 5px;
+    padding-bottom: 20px;
     /* margin: 10px; */
     background-color: var(--main-bg-color);
 }
@@ -90,37 +93,55 @@ main h1 {
 main #about-us-main {
     margin: 0;
     color: var(--main-color);
-    padding-bottom: 10px;
+
 }
 
-.fa-envelope {
-    font-size: 3em;
+main #mission {
+    margin: 0;
+    color: var(--main-color);
+    padding-bottom: 100px;
 }
 
-footer {
+/*footer {
     height: 6rem;
     position: absolute;
     bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center;
+    justify-content: space-between; 
+    align-items:center;
     text-align: center;
-    color: var(--main-bg-color);
+    color: var(--main-color);
+}*/
+
+footer {
+    /*background-color: #333;*/
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
 }
 
 footer p {
     margin-bottom: 0;
+
 }
 
-#footer-icons a {
+footer #address {
+    font-size: 1rem;
+}
+
+#footer-links a {
     font-size: 2em;
     text-decoration: none;
-    color: var(--main-bg-color);
+    color: #fff;
 }
 
-#footer-icons i:hover {
+#footer-links i:hover {
     color: var(--secondary-color);
     transition: .1s ease-in-out;
 }
@@ -154,4 +175,5 @@ footer p {
     main {
         text-align: center;
     }
+
 }
