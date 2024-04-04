@@ -14,9 +14,16 @@ body {
     margin: 0;
     position: relative;
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
     color: var(--main-color);
     background-color: var(--main-bg-color);
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-family: "Roboto Slab", serif;
 }
 
 header {
@@ -74,8 +81,7 @@ nav a:hover {
 }
 
 main {
-    padding-top: 5px;
-    padding-bottom: 20px;
+    padding: 20px 50px;
     /* margin: 10px; */
     background-color: var(--main-bg-color);
 }
@@ -93,7 +99,16 @@ main h1 {
 main #about-us-main {
     margin: 0;
     color: var(--main-color);
+    padding: 20px 100px;
+    text-align: center;
+}
 
+main #about-us-main h1 {
+    font-size: 48px;
+}
+
+main #about-us-main p {
+    font-size: 20px;
 }
 
 main #mission {
@@ -118,7 +133,7 @@ main #mission {
 footer {
     /*background-color: #333;*/
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--main-bg-color);
     text-align: center;
     width: 100%;
     position: absolute;
@@ -128,6 +143,7 @@ footer {
 
 footer p {
     margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -173,6 +189,14 @@ footer #address {
         margin-top: 0;
     }
     main {
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    main #about-us-main {
+        margin: 0;
+        color: var(--main-color);
+        padding: 20px 20px;
         text-align: center;
     }
 
