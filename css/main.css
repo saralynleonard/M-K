@@ -84,6 +84,11 @@ main {
     padding: 20px 50px;
     /* margin: 10px; */
     background-color: var(--main-bg-color);
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main p {
@@ -116,6 +121,45 @@ main #mission {
     color: var(--main-color);
     padding-bottom: 100px;
 }
+
+#founder-container {
+    width: 375px;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#founder-container img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+#founder-container #text-overlay {
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--main-bg-color);
+    font-size: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease;
+    font-family: "Roboto", sans-serif;
+}
+
+#founder-container:hover #text-overlay {
+    bottom: 0;
+}
+
 
 /*footer {
     height: 6rem;
@@ -191,6 +235,7 @@ footer #address {
     main {
         text-align: center;
         padding: 20px 20px;
+        padding-bottom: 150px;
     }
 
     main #about-us-main {
