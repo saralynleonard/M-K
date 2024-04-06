@@ -194,6 +194,15 @@ main #mission {
     top: 75%;
 }
 
+#founder-container #arrow {
+    display: flex;
+    display: 1s ease;
+}
+
+#founder-container:hover #arrow {
+    display: none;
+}
+
 #about-btn:hover {
     box-shadow: 0 0 15px 2px var(--main-color-fade);
 }
