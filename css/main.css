@@ -158,7 +158,7 @@ main #mission {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 
 #founder-container:hover #display-txt {
@@ -178,7 +178,7 @@ main #mission {
     text-decoration: none;
     border-radius: 20px;
     cursor: pointer;
-    transition: top 0.3s ease;
+    transition: 0.2s ease;
 }
 
 #founder-container:hover #about-btn{
