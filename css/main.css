@@ -185,6 +185,10 @@ main #mission {
     top: 50%;
 }
 
+#about-btn:hover {
+    box-shadow: 0 0 15px 2px var(--main-color-fade);
+}
+
 /* #founder-container #text-overlay {
     position: absolute;
     left: 0;
