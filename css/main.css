@@ -106,7 +106,7 @@ main h1 {
 main #about-us-main {
     margin: 0;
     color: var(--main-color);
-    padding: 20px 100px;
+    padding: 20px 50px;
     text-align: center;
 }
 
@@ -306,4 +306,13 @@ footer #address {
         text-align: center;
     }
 
+}
+
+@media (max-width: 768px) {
+    main #about-us-main {
+        margin: 0;
+        color: var(--main-color);
+        padding: 20px 20px;
+        text-align: center;
+    }
 }
