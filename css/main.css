@@ -147,6 +147,10 @@ main #mission {
 
 #founder-container #display-txt {
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     bottom: 0;
     left: 0;
     height: 75px;
@@ -160,6 +164,10 @@ main #mission {
     white-space: nowrap;
     text-overflow: ellipsis;
     transition: 0.2s ease;
+}
+
+#display-txt #arrow {
+    align-items: center;
 }
 
 #founder-container:hover #display-txt {
@@ -183,7 +191,7 @@ main #mission {
 }
 
 #founder-container:hover #about-btn{
-    top: 50%;
+    top: 75%;
 }
 
 #about-btn:hover {
