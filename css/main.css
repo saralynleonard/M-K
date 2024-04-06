@@ -4,6 +4,7 @@
     /* --main-color: #f1faee; */
     /*--main-color: #002d40;*/
     --main-color: #1F3A93;
+    --main-color-fade: rgba(31, 58, 147, 0.8)
 }
 * {
     box-sizing: border-box;
@@ -249,7 +250,7 @@ footer #address {
 }
 
 #footer-links i:hover {
-    color: var(--secondary-color);
+    color: var(--main-color-fade);
     transition: .1s ease-in-out;
 }
 
