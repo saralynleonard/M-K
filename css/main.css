@@ -135,12 +135,14 @@ main #about-us-main {
 }
 
 main #about-us-main h1 {
-    font-size: 4.25rem;
+    /* font-size: 4.25rem; */
+    font-size: clamp(2.5rem, 5vw, 6rem);
     font-weight: bolder;
 }
 
 main #about-us-main p {
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
+    font-size: clamp(1rem, 5vw, 2rem);
 }
 
 main #mission {
@@ -360,6 +362,10 @@ footer #address {
         text-align: center;
     }
 
+    #about-us-main p {
+        font-size: .9em;
+    }
+
     #founder-container #about-btn {
         position: absolute;
         top: 150%;
@@ -384,5 +390,13 @@ footer #address {
         /* color: var(--main-color);
         padding: 20px 20px; */
         text-align: center;
+    }
+
+    #about-us-main p {
+        font-size: .9rem;
+    }
+
+    #about-us-main h1 {
+        font-size: .9em;
     }
 }
