@@ -115,7 +115,7 @@ main h1 {
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.9)
     ), url(images/banner.jpg);
-    /* background-image: url(/images/banner.jpg); */
+    /* background-image: url(/M-K/images/banner.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
