@@ -114,7 +114,7 @@ main h1 {
         to bottom,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.9)
-    ), url(https://github.com/saralynleonard/M-K/blob/main/images/banner.jpg);
+    ), url('/M-K/images/banner.jpg');
     /* background-image: url(/M-K/images/banner.jpg); */
     background-size: cover;
     background-position: center;
