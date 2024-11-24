@@ -20,11 +20,13 @@ body {
 }
 
 h1 {
-    font-family: "Roboto", sans-serif;
+
+    font-family: "Roboto Slab", serif;
 }
 
 p {
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto", sans-serif;
+
 }
 
 header {
@@ -38,6 +40,8 @@ header {
 }
 
 nav {
+    position: fixed;
+    top: 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -83,7 +87,7 @@ nav a:hover {
 }
 
 main {
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
     /* margin: 10px; */
     background-color: var(--main-bg-color);
     padding-bottom: 150px;
@@ -95,27 +99,48 @@ main {
 
 main p {
     margin: 10px;
-    line-height: 25px;
+    /* line-height: 25px; */
 }
 
 main h1 {
     text-align: center;
-    padding-top: 15px;
+    /* padding-top: 15px; */
+}
+
+.image-container {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.9)
+    ), url(/images/banner.jpg);
+    /* background-image: url(/images/banner.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    overflow: hidden;
 }
 
 main #about-us-main {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0;
-    color: var(--main-color);
+    color: var(--main-bg-color);
     padding: 20px 50px;
-    text-align: center;
+    text-align: center; 
 }
 
 main #about-us-main h1 {
-    font-size: 48px;
+    font-size: 4.25rem;
+    font-weight: bolder;
 }
 
 main #about-us-main p {
-    font-size: 20px;
+    font-size: 1.75rem;
 }
 
 main #mission {
@@ -124,10 +149,28 @@ main #mission {
     padding-bottom: 100px;
 }
 
-#founder-container {
+#mission h1 {
+    font-size: 2.25rem;
+}
+
+#mission p {
+    font-size: 1.1rem;
+}
+
+.founders {
+    display: block;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.founder-container {
     width: 375px;
+    height: 375px;
+    max-height: 100%;
     max-width: 100%;
-    height: auto;
+
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -139,13 +182,14 @@ main #mission {
     font-family: "Roboto", sans-serif;
 }
 
-#founder-container img {
-    height: auto;
+.founder-container img {
+    height: 100%;
     width: 100%;
+    overflow: hidden;
     display: block;
 }
 
-#founder-container #display-txt {
+.founder-container #display-txt {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -170,11 +214,11 @@ main #mission {
     align-items: center;
 }
 
-#founder-container:hover #display-txt {
+.founder-container:hover #display-txt {
     height: 100%;
 }
 
-#founder-container #about-btn {
+.founder-container #about-btn {
     position: absolute;
     top: 150%;
     left: 50%;
@@ -190,22 +234,23 @@ main #mission {
     transition: 0.2s ease;
 }
 
-#founder-container:hover #about-btn{
+.founder-container:hover #about-btn{
     top: 75%;
 }
 
-#founder-container #arrow {
+.founder-container #arrow {
     display: flex;
     display: 1s ease;
 }
 
-#founder-container:hover #arrow {
+.founder-container:hover #arrow {
     display: none;
 }
 
 #about-btn:hover {
     box-shadow: 0 0 15px 2px var(--main-color-fade);
 }
+
 
 /* #founder-container #text-overlay {
     position: absolute;
@@ -304,14 +349,14 @@ footer #address {
     }
     main {
         text-align: center;
-        padding: 20px 20px;
+        padding: 0;
         padding-bottom: 150px;
     }
 
     main #about-us-main {
         margin: 0;
-        color: var(--main-color);
-        padding: 20px 20px;
+        /* color: var(--main-color);
+        padding: 20px 20px; */
         text-align: center;
     }
 
@@ -336,8 +381,8 @@ footer #address {
 @media (max-width: 768px) {
     main #about-us-main {
         margin: 0;
-        color: var(--main-color);
-        padding: 20px 20px;
+        /* color: var(--main-color);
+        padding: 20px 20px; */
         text-align: center;
     }
 }

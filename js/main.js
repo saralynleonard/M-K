@@ -1,6 +1,10 @@
 const nav = document.getElementById('nav-main');
 nav.innerHTML = createNavigation();
 
+function getCurrentYear() {
+    return new Date().getFullYear()
+}
+
 const footer = document.getElementById('footer-main');
 footer.innerHTML = createFooter(); 
 
@@ -18,7 +22,7 @@ function createNavigation() {
 function createFooter() {
     return `
 <p>
-   M&K Global Impact &copy; 2024
+   M&K Global Impact &copy; ${getCurrentYear()}
 </p>
 <div id="address">
 <p>
@@ -30,7 +34,7 @@ function createFooter() {
 </p>
 </div>
 <p id="footer-links">
-    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <!--<a href="#"><i class="fa-brands fa-linkedin"></i></a>-->
 </p>
 <p></p>
 `
