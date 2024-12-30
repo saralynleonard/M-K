@@ -135,13 +135,11 @@ main #about-us-main {
 }
 
 main #about-us-main h1 {
-    /* font-size: 4.25rem; */
     font-size: clamp(2.5rem, 5vw, 6rem);
     font-weight: bolder;
 }
 
 main #about-us-main p {
-    /* font-size: 1.75rem; */
     font-size: clamp(1rem, 5vw, 2rem);
 }
 
