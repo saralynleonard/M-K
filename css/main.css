@@ -114,7 +114,7 @@ main h1 {
         to bottom,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.9)
-    ), url(images/banner.jpg);
+    ), url(/images/banner.jpg);
     /* background-image: url(/images/banner.jpg); */
     background-size: cover;
     background-position: center;
@@ -148,6 +148,7 @@ main #about-us-main p {
 main #mission {
     margin: 0;
     color: var(--main-color);
+    background-color: var(--secondary-color);
     padding-bottom: 100px;
 }
 
@@ -165,6 +166,10 @@ main #mission {
     align-items: center;
     align-content: center;
     text-align: center;
+    /* margin: 50px 0; */
+    background: var(--main-color);
+    width: 100%;
+    height: 100%;
 }
 
 .founder-container {
@@ -172,7 +177,6 @@ main #mission {
     height: 375px;
     max-height: 100%;
     max-width: 100%;
-
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -180,6 +184,7 @@ main #mission {
     align-items: center;
     text-align: center;
     border-radius: 8px;
+    margin: 50px 10px 50px 10px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     font-family: "Roboto", sans-serif;
 }
