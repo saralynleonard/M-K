@@ -114,7 +114,7 @@ main h1 {
         to bottom,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.9)
-    ),  url(/images/banner.jpg);
+    ),  url(https://github.com/saralynleonard/M-K/blob/main/images/banner.jpg);
     /* url(https://github.com/saralynleonard/M-K/blob/main/images/banner.jpg);*/
     /* background-image: url(/images/banner.jpg); */
     background-size: cover;
