@@ -26,7 +26,9 @@ function createFooter() {
 </p>
 <div id="address">
 <p>
-    136 West Dares Beach Road #207, Prince Frederick, MD 20678
+    136 West Dares Beach Road #207
+    <br>
+    Prince Frederick, MD 20678
 </p>
 <p>
     <i class="fa-solid fa-phone"></i> 301-373-0790 <br>
