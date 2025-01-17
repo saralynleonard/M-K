@@ -12,10 +12,13 @@ function createNavigation() {
     return `
     <a href="./index.html" id="nav-logo"><img id="nav-logo" src="./images/logo.PNG" alt="M&K Global Impact globe logo"></a>
     <!--<ul class="nav-list">
-    <li class="nav-item">
-        <a href="#">Contact</a>
-    </li>
-</ul>--!>
+        <li class="nav-item">
+            <a href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a href="#founders-tag">Meet Us</a>
+        </li>
+    </ul>-->
 `
 }
 
